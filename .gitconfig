@@ -1,0 +1,50 @@
+[color]
+    ui = true
+
+[pull]
+    rebase = true
+
+[user]
+    name = Jens Awisus
+    email = awisus.jens@gmail.com
+
+[core]
+    pager = delta
+
+[merge]
+    conflictstyle = diff3
+
+[diff]
+    colorMoved = default
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true
+    dark = true
+    features = rose-pine
+    syntax-theme = none
+
+# https://github.com/rose-pine/delta
+[delta "rose-pine"]
+    dark = true
+    file-style = "#9ccfd8" bold ul
+    file-decoration-style = "#2a2838"
+    commit-decoration-style = "#2a2838"
+    hunk-header-decoration-style = "#e0def4" box
+    hunk-header-line-number-style = "#6e6a86"
+    hunk-header-style = line-number syntax bold
+    line-numbers-left-style = "#6e6a86"
+    line-numbers-minus-style = "#eb6f92"
+    line-numbers-plus-style = "#31748f"
+    line-numbers-right-style = "#c4a7e7"
+    line-numbers-zero-style = "#6e6a86"
+    minus-emph-style = syntax bold "#82435b"
+    minus-style = syntax "#2e202f"
+    plus-emph-style = syntax bold "#25465a"
+    plus-style = syntax "#1b202f"
+    whitespace-error-style = "#2a2538"
+
+[delta "dark"]
+	features = rose-pine
