@@ -1,0 +1,7 @@
+# alias
+if ! command -v pbcopy > /dev/null ; then
+    alias pbcopy='xsel -i --clipboard'
+fi
+alias vi='nvim'
+alias vim='nvim'
+alias k='kubectl'
