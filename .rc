@@ -1,0 +1,16 @@
+# alias
+alias vi='nvim'
+alias vim='nvim'
+alias k='kubectl'
+
+# colima 
+if [ -z "$XDG_CONFIG_HOME" ]; then 
+    colima_home="$HOME/.colima"
+else 
+    colima_home="$XDG_CONFIG_HOME/colima"
+fi
+if [ -S "$colima_home" ] ; then
+    export DOCKER_HOST="unix://$colima_home/default/docker.sock"
+    export TESTCONTAINERS_DOCKER_SOCKET_OVERRIDE=/var/run/docker.sock
+    export TESTCONTAINERS_HOST_OVERRIDE=$(colima ls -j | jq -r '.address')
+fi
