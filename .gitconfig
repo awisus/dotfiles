@@ -1,0 +1,7 @@
+[color]
+	ui = true
+[pull]
+	rebase = true
+[user]
+	name = Jens Awisus
+	email = awisus.jens@gmail.com
