@@ -113,10 +113,6 @@ source $ZSH/oh-my-zsh.sh
 # history file
 export HISTFILE="$HOME/.zsh_history"
 
-# docker
-export DOCKER_SOCKET_PATH=$HOME/.docker/run/docker.sock
-export DOCKER_HOST=unix://$DOCKER_SOCKET_PATH
-
 # android
 export ANDROID_HOME="$HOME/android"
 export ANDROID_SDK_ROOT="$ANDROID_HOME/sdk"
