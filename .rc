@@ -1,0 +1,14 @@
+alias vi='nvim'
+alias vim='nvim'
+alias k='kubectl'
+
+if ! command -v pbcopy > /dev/null ; then
+    alias pbcopy='xsel -i --clipboard'
+fi
+
+if command -v gemini > /dev/null ; then
+  "??" () {
+    gemini --model gemini-3-flash-preview -p "$*" 2>/dev/null | bat -l md --style=plain
+  }
+  alias "??"='noglob "??"'
+fi
