@@ -112,19 +112,3 @@ source $ZSH/oh-my-zsh.sh
 
 # history file
 export HISTFILE="$HOME/.zsh_history"
-
-# android
-export ANDROID_HOME="$HOME/android"
-export ANDROID_SDK_ROOT="$ANDROID_HOME/sdk"
-
-# dart
-export DART_SDK="$HOME/flutter/bin/cache/dart-sdk"
-export PATH="$PATH:$DART_SDK/bin"
-
-# flutter
-export PATH="$PATH:$HOME/flutter/bin"
-
-# nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
