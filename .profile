@@ -26,9 +26,14 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-# set chrome executable to chromium
+# set chrome executable to chromium if it exists
 if [ -f "/usr/bin/chromium-browser" ] ; then
     export CHROME_EXECUTABLE=/usr/bin/chromium-browser
+fi
+
+# homebrew
+if [[ $OSTYPE == 'darwin'* ]] ; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
 # android
