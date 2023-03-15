@@ -36,6 +36,10 @@ if [[ $OSTYPE == 'darwin'* ]] ; then
   eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
+# jenv
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+
 # android
 export ANDROID_HOME="$HOME/android"
 export ANDROID_SDK_ROOT="$ANDROID_HOME/sdk"
