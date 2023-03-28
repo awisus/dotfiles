@@ -40,6 +40,9 @@ fi
 if [ -f "/opt/homebrew/etc/profile.d/autojump.sh" ] ; then
     . /opt/homebrew/etc/profile.d/autojump.sh
 fi
+if [ -f "/usr/share/autojump/autojump.sh" ] ; then
+    . /usr/share/autojump/autojump.sh
+fi
 
 # docker
 if [ -S "$HOME/.colima/docker.sock" ] ; then
