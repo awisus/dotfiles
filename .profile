@@ -32,8 +32,13 @@ if [ -f "/usr/bin/chromium-browser" ] ; then
 fi
 
 # homebrew
-if [[ $OSTYPE == 'darwin'* ]] ; then
-  eval "$(/opt/homebrew/bin/brew shellenv)"
+if [ -f "/opt/homebrew/bin/brew" ] ; then
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
+
+# autojump
+if [ -f "/opt/homebrew/etc/profile.d/autojump.sh" ] ; then
+    . /opt/homebrew/etc/profile.d/autojump.sh
 fi
 
 # docker
