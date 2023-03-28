@@ -36,6 +36,12 @@ if [[ $OSTYPE == 'darwin'* ]] ; then
   eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
+# docker
+if [ -S "$HOME/.colima/docker.sock" ] ; then
+    export TESTCONTAINERS_DOCKER_SOCKET_OVERRIDE=/var/run/docker.sock
+    export DOCKER_HOST="unix://$HOME/.colima/docker.sock"
+fi
+
 # jenv
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
