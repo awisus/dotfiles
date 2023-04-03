@@ -27,8 +27,10 @@ if [ -d "$HOME/.local/bin" ] ; then
 fi
 
 # set chrome executable to chromium if it exists
-if [ -f "/usr/bin/chromium-browser" ] ; then
-    export CHROME_EXECUTABLE=/usr/bin/chromium-browser
+if [ -f "/opt/homebrew/bin/chromium" ] ; then
+	export CHROME_EXECUTABLE=/opt/homebrew/bin/chromium
+elif [ -f "/usr/bin/chromium-browser" ] ; then
+	export CHROME_EXECUTABLE=/usr/bin/chromium-browser
 fi
 
 # homebrew
