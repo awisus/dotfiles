@@ -31,6 +31,8 @@ if [ -f "/Applications/Chromium.app/Contents/MacOS/Chromium" ] ; then
     export CHROME_EXECUTABLE="/Applications/Chromium.app/Contents/MacOS/Chromium"
 elif [ -f "/Applications/Brave Browser.app/Contents/MacOS/Brave Browser" ] ; then
     export CHROME_EXECUTABLE="/Applications/Brave Browser.app/Contents/MacOS/Brave Browser"
+elif [ -f "/usr/bin/brave-browser" ] ; then
+    export CHROME_EXECUTABLE="/usr/bin/brave-browser"
 elif [ -f "/usr/bin/chromium-browser" ] ; then
     export CHROME_EXECUTABLE="/usr/bin/chromium-browser"
 fi
