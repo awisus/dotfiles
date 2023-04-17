@@ -53,8 +53,7 @@ export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 
 # android
-export ANDROID_HOME="$HOME/android"
-export ANDROID_SDK_ROOT="$ANDROID_HOME/sdk"
+export ANDROID_HOME="$HOME/android/sdk"
 
 # dart
 export DART_SDK="$HOME/flutter/bin/cache/dart-sdk"
