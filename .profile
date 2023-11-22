@@ -56,12 +56,13 @@ eval "$(jenv init -)"
 
 # android
 export ANDROID_HOME="$HOME/android/sdk"
-
-# dart
-export DART_SDK="$HOME/flutter/bin/cache/dart-sdk"
-export PATH="$PATH:$DART_SDK/bin"
+export PATH="$PATH:$ANDROID_HOME/cmdline-tools/latest/bin"
+export PATH="$PATH:$ANDROID_HOME/emulator"
+export PATH="$PATH:$ANDROID_HOME/platform-tools"
 
 # flutter
+export DART_SDK="$HOME/flutter/bin/cache/dart-sdk"
+export PATH="$PATH:$DART_SDK/bin"
 export PATH="$PATH:$HOME/flutter/bin"
 
 # nvm
